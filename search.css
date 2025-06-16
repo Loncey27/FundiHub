@@ -26,6 +26,12 @@
     margin: 0px 100px;
 }
 
+.nav_menu li {
+    margin: 12px 35px;
+    font-size: large;
+    font-weight: 550;
+}
+
 button {
     padding: 20px;
     background-color: #FF7043;
@@ -68,14 +74,14 @@ button {
 
 .artisan_card_div {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33.33% 33.3% 33.3%;
 }
 
 .artisan_card {
     border-color: darkgrey solid;
     margin: 12px;
     padding: 25px;
-    background-color: white;
+    background-color: #fafafa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
@@ -87,7 +93,9 @@ button {
 /* footer styling */
 .footer_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 0px;
+    padding: 25px;
     background-color: rgb(185, 181, 178);
 }
 
