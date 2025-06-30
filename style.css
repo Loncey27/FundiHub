@@ -1,8 +1,7 @@
 * {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0px 1px;
-
 }
 
 .nav_container {
@@ -31,31 +30,26 @@
     margin: 12px 35px;
     font-size: large;
     font-weight: 550;
-
 }
 
 button {
-    padding: 20px;
-    background-color: #FF7043;
-    border-radius: 8px;
+    /* padding: 20px; */
+    background-color: #fe7b53;
+    border-radius: 8rem;
     margin: 20px;
-    border-color: none;
     font-size: 14px;
-
+    width: 100px;
+    height: 2.5rem;
 }
 
 /* search */
 .main_div {
-    margin: 50px 50px 0px;
-    padding: 50px;
-
+    margin: 30px 50px 0px;
+    padding: 20px;
 }
 
-.tagline,
 .search_area {
-    display: flex;
-    justify-content: center;
-
+    text-align: center;
 }
 
 .tagline {
@@ -75,13 +69,15 @@ button {
 /* services */
 .services-container {
     display: flex;
-
 }
 
 .services {
-    text-align: center;
     padding: 20px;
     margin: 0px 20px 20px;
+}
+
+.services h2 {
+    text-align: center;
 }
 
 .div_services {
@@ -112,15 +108,121 @@ button {
     padding: 25px;
     background-color: #fafafa;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
+/* search tab */
 
-/* footer styling */
-.footer_container {
+.topSearch {
+    text-align: center;
+    padding: 20px;
+}
+.top-div {
+    font-size: large;
+    text-align: center;
+    font-size: x-large;
+    margin: 30px;
+}
+
+.artisans_list h4 {
     display: flex;
     justify-content: center;
+    margin: 10px;
+}
+
+.artisan_card_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.artisan_card {
+    border-color: darkgrey solid;
+    margin: 12px;
+    padding: 25px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.artisan_card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.artisan_card li {
+    list-style: none;
+}
+
+/* end of 'search tab styling' */
+
+/* profile Cards */
+
+.search_filter {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    text-align: center;
+}
+
+.filter_bar {
+    width: 700px;
+    height: 30px;
+    border-radius: 25px;
+    border-color: darkgrey;
+    font-size: large;
+    text-align: center;
+}
+
+.artisan_portfolio_container {
+    display: flex;
+}
+
+.artisan_portfolio {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    border-color: darkgrey solid;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1150px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 25rem;
+}
+
+.slider {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.1rem;
+}
+
+.slider img {
+    scroll-snap-align: start;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.artisanInfo ul li {
+    list-style: none;
+}
+
+/* profile Cards end */
+
+
+/* footer styling */
+
+.footer_container {
+    display: flex;
+    justify-content: space-around;
     margin: 0px;
     padding: 25px;
     background-color: rgb(185, 181, 178);
